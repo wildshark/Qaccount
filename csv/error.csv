@@ -1,0 +1,5 @@
+﻿error,message
+100,Record submitted was not successful
+200,Record submitted was successfull
+404,Page not found
+500,Connection to server failed. Contact administor

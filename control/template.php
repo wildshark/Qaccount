@@ -32,6 +32,7 @@ function head_form($t){
     <link rel='stylesheet' href='vendors/css/vendor.bundle.base.css'>
     <!-- endinject -->
     <!-- plugin css for this page -->
+    <link rel='stylesheet' href='vendors/jquery-toast-plugin/jquery.toast.min.css'>
     <link rel='stylesheet' href='vendors/select2/select2.min.css'>
     <link rel='stylesheet' href='vendors/select2-bootstrap-theme/select2-bootstrap.min.css'>
     <!-- End plugin css for this page -->
@@ -45,6 +46,7 @@ function head_form($t){
 function side_menu(){
 
     return"
+    <button type='button' class='btn btn-success btn-fw' onclick='showSuccessToast()'>Success</button>
         <li class='nav-item'>
             <a class='nav-link' href='?_route=dashboard'>
               <i class='typcn typcn-device-desktop menu-icon'></i>
@@ -59,7 +61,7 @@ function side_menu(){
             </a>
             <div class='collapse' id='ui-investment'>
               <ul class='nav flex-column sub-menu'>
-                <li class='nav-item'> <a class='nav-link' href='?_route=investment'>New investment</a></li>
+                <li class='nav-item'> <a class='nav-link' data-toggle='modal' data-target='#m-investment' href='#'>Capital & Withdraws</a></li>
                 <li class='nav-item'> <a class='nav-link' href='?_route=inv-statement'>Statement</a></li>
               </ul>
             </div>
@@ -72,7 +74,7 @@ function side_menu(){
             </a>
             <div class='collapse' id='ui-income'>
               <ul class='nav flex-column sub-menu'>
-                <li class='nav-item'> <a class='nav-link' href='?_route=income'>New Income</a></li>
+                <li class='nav-item'> <a class='nav-link' data-toggle='modal' data-target='#m-income' href='#'>New Income</a></li>
                 <li class='nav-item'> <a class='nav-link' href='?_route=inc-statement'>Statement</a></li>
               </ul>
             </div>
@@ -85,7 +87,7 @@ function side_menu(){
             </a>
             <div class='collapse' id='ui-expenses'>
               <ul class='nav flex-column sub-menu'>
-                <li class='nav-item'> <a class='nav-link' href='?_route=expenses'>New Expenses</a></li>
+                <li class='nav-item'> <a class='nav-link' href='#' data-toggle='modal' data-target='#m-expennses'>New Expenses</a></li>
                 <li class='nav-item'> <a class='nav-link' href='?_route=exp-statement'>Statement</a></li>
               </ul>
             </div>

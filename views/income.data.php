@@ -27,7 +27,9 @@
                             <td>Null</td>
                             <td>Null</td>
                             <td>Null</td>
-                            <td>Null</td>
+                            <td>
+                            <label class='badge badge-info'>On hold</label>
+                            </td>
                             <td>
                             <button class='btn btn-outline-primary'>View</button>
                             </td>
@@ -48,8 +50,7 @@
                                 <td>{$r['description']}</td>
                                 <td>{$r['ledger']}</td>
                                 <td>{$r['ref']}</td>
-                                <td>{$r['cash_cr']}</td>
-                                <td>{$r['cash_cr']}</td>
+                                <td>{$r['qout_dr']}</td>
                                 <td>
                                 <button class='btn btn-outline-primary'>View</button>
                                 </td>

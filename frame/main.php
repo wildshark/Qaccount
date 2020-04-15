@@ -610,7 +610,7 @@
               </div>
             </div>
           </div>
-          
+          <?php include('modal.php')?>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
@@ -628,10 +628,11 @@
       </div>
       <!-- main-panel ends -->
     </div>
+    
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-
+  
   <!-- base:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
@@ -646,9 +647,13 @@
   <script src="js/todolist.js"></script>
   <!-- endinject -->
   <!-- plugin js for this page -->
+  <script src="vendors/jquery-toast-plugin/jquery.toast.min.js"></script>
   <!-- End plugin js for this page -->
   <!-- Custom js for this page-->
   <script src="js/dashboard.js"></script>
+  <script src="js/modal-demo.js"></script>
+  <script src="js/toastDemo.js"></script>
+  <!--script src="js/desktop-notification.js"></script-->
   <!-- End custom js for this page-->
 </body>
 

@@ -307,7 +307,10 @@
       </nav>
       <!-- partial -->
       <div class="main-panel">
-        <?php require($view);?>
+        <div class="content-wrapper">
+          <?php require($view);?>
+          <?php include('modal.php')?>
+        </div>  
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
@@ -340,9 +343,12 @@
   <!-- plugin js for this page -->
   <script src="vendors/datatables.net/jquery.dataTables.js"></script>
   <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="vendors/jquery-toast-plugin/jquery.toast.min.js"></script>
   <!-- End plugin js for this page -->
   <!-- Custom js for this page-->
   <script src="js/data-table.js"></script>
+  <script src="js/modal-demo.js"></script>
+  <script src="js/toastDemo.js"></script>
   <!-- End custom js for this page-->
 </body>
 

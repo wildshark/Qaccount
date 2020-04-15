@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from www.urbanui.com/polluxui/template/demo/vertical-default-dark/pages/samples/register-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2020 17:56:58 GMT -->
 <head>
     <?php echo head($page);?>
 </head>
@@ -19,7 +17,7 @@
               </div>
               <h4>New here?</h4>
               <h6 class="font-weight-light">Join us today! It takes only few steps</h6>
-              <form class="pt-3">
+              <form class="pt-3" method="post" action="index.php">
                 <div class="form-group">
                   <label>Username</label>
                   <div class="input-group">
@@ -43,15 +41,15 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label>Country</label>
-                  <select class="form-control form-control-lg" name="country" id="exampleFormControlSelect2">
-                    <option>Country</option>
-                    <option>United States of America</option>
-                    <option>United Kingdom</option>
-                    <option>India</option>
-                    <option>Germany</option>
-                    <option>Argentina</option>
-                  </select>
+                  <label>Mobile</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend bg-transparent">
+                      <span class="input-group-text bg-transparent border-right-0">
+                        <i class="typcn typcn-mail text-primary"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control form-control-lg border-left-0" name="mobile" placeholder="Mobile">
+                  </div>
                 </div>
                 <div class="form-group">
                   <label>Password</label>
@@ -103,6 +101,4 @@
   <!-- endinject -->
 </body>
 
-
-<!-- Mirrored from www.urbanui.com/polluxui/template/demo/vertical-default-dark/pages/samples/register-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2020 17:56:58 GMT -->
 </html>

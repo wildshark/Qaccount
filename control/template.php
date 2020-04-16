@@ -133,13 +133,8 @@ function side_menu(){
             </a>
             <div class='collapse' id='ui-advanced'>
               <ul class='nav flex-column sub-menu'>
-                <li class='nav-item'> <a class='nav-link' href='pages/ui-features/dragula.html'>Income & Expenses</a></li>
-                <li class='nav-item'> <a class='nav-link' href='pages/ui-features/clipboard.html'>Chart of Account</a></li>
-                <li class='nav-item'> <a class='nav-link' href='pages/ui-features/context-menu.html'>Context menu</a></li>
-                <li class='nav-item'> <a class='nav-link' href='pages/ui-features/slider.html'>Sliders</a></li>
-                <li class='nav-item'> <a class='nav-link' href='pages/ui-features/carousel.html'>Carousel</a></li>
-                <li class='nav-item'> <a class='nav-link' href='pages/ui-features/colcade.html'>Colcade</a></li>
-                <li class='nav-item'> <a class='nav-link' href='pages/ui-features/loaders.html'>Loaders</a></li>
+                <li class='nav-item'> <a class='nav-link' href='?_route=setup&setup=ie'>Income & Expenses</a></li>
+                <li class='nav-item'> <a class='nav-link' href='?_route=setup&setup=coa'>Chart of Account</a></li>
               </ul>
             </div>
         </li>

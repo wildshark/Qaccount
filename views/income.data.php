@@ -7,13 +7,13 @@
             <table id="order-listing" class="table">
               <thead>
                 <tr>
-                    <th>Order #</th>
+                    <th>#</th>
                     <th>Date</th>
                     <th>Details</th>
-                    <th>Ref</th>
                     <th>Category</th>
+                    <th>Ref</th>
                     <th>Amount</th>
-                    <th>Status</th>
+                    <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -28,9 +28,6 @@
                             <td>Null</td>
                             <td>Null</td>
                             <td>
-                            <label class='badge badge-info'>On hold</label>
-                            </td>
-                            <td>
                             <button class='btn btn-outline-primary'>View</button>
                             </td>
                         </tr>
@@ -43,6 +40,7 @@
                             }else{
                                 $n = 1;
                             }
+                            $amount = number_format($r['qout_dr'],2);
                             echo"
                             <tr>
                                 <td>{$n}</td>
@@ -50,9 +48,9 @@
                                 <td>{$r['description']}</td>
                                 <td>{$r['ledger']}</td>
                                 <td>{$r['ref']}</td>
-                                <td>{$r['qout_dr']}</td>
+                                <td>{$amount}</td>
                                 <td>
-                                <button class='btn btn-outline-primary'>View</button>
+                                  <a href='?_submit=delete&p=ledger&id={$r['ledger_id']}' class='btn btn-outline-danger'>Delete</a>
                                 </td>
                             </tr>
                             ";

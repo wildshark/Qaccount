@@ -40,6 +40,14 @@ if((!isset($_SESSION['user_id'])) && (!isset($_SESSION['user_id']))){
             require("frame/table.php");
         break;
 
+        case"ledger-details";
+            $data = ledger_details_datasheet($_GET['id']);
+            $summary = $data['summary'];
+            $datasheet = $data['data'];
+            $view = "views/ledger.data.php";
+            require("frame/table.php");
+        break;
+
 
 
         default:
